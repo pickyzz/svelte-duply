@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+</script>
+
+<div class="w-full h-screen flex flex-col justify-center items-center bg-white dark:bg-black">
+  <h1 class="text-6xl flex flex-col">
+    <span>Cats think </span><span>they will</span><span>rule the world</span>
+  </h1>
+</div>
