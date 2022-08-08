@@ -10,7 +10,7 @@
 		themeChange(false)
 	})
 
-	const url = 'https://pickyzz.dev'
+	const url = 'https://svelte-duply.pickyzz.dev'
 	const title = 'Sveltekit Template'
 	
 </script>
