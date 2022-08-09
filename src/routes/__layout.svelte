@@ -1,6 +1,7 @@
 <script lang='ts'>
 	import '../app.css';
 	import Footer from '$lib/components/Footer.svelte'
+	import Head from '$lib/components/Head.svelte'
 	import Kofi from '$lib/components/Kofi.svelte'
 	import ShareButton from '$lib/components/ShareButton.svelte'
 	import { themeChange } from 'theme-change'
@@ -12,14 +13,16 @@
 	})
 
 	const url = 'https://svelte-duply.pickyzz.dev'
-	const title = 'Sveltekit Template'
-	
+	const title = 'Svelte-duply'
+	const description = 'Sveltekit Template'
+	const imageUrl = `${url}/screenshot.png`
 </script>
 
+<Head {title} {description} {url} {imageUrl} />
+<Kofi name="pickyzz" label="Buy me Coffee" />
+<ShareButton {url} {title} />
 <main>
 	<Darkmode />
-	<Kofi name="pickyzz" label="Buy me Coffee" />
-	<ShareButton {url} {title} />
 	<Footer />
 	<slot />
 </main>
